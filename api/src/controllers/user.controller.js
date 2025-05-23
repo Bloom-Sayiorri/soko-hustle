@@ -1,4 +1,3 @@
-import { json } from ('express');
 import User from ('../models/user.model.js');
 
 const getAllUsers = async (res, req, next) => {
@@ -21,7 +20,4 @@ const getUser = async (req, res, next) => {
     }
 };
 
-
-
-
-module.exports = { getAllUsers, getUser };
+export default { getAllUsers, getUser };
