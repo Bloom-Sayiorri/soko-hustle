@@ -8,6 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 dotenv.config();
 
+// config
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -16,6 +17,6 @@ app.use("/api", userRoute);
 app.use("/api", productRoute);
 
 app.listen(() => {
-	// connectDB();
-	console.log(`Server running on port: ${PORT}`);
+  // connectDB();
+  console.log(`Server running on port: ${PORT}`);
 });
